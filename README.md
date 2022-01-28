@@ -255,6 +255,12 @@ Test.doSomething();
 // => The magic number is: 42
 ```
 
+> There are a few things to keep in mind with this package:
+>
+> - Once the decorators API will be part of the ECMAScript standard, the metadata API will be proposed for adoption, potentially making the `reflect-metadata` package obsolete.
+> - There is an object that was added with ES6, that shares a name with this package ([`Reflect`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)), which has among others the following methods: `Reflect.get(...)` and `Reflect.set(...)`.
+>   - They look similar, but are actually used for setting properties on objects, while this package is capable of adding metadata to object properties, methods, and so on.
+
 ## Conclusion
 
 TypeScript decorators (and hopefully in the near future "JavaScript decorators"), are a great tool for mainly interceptor type functionality, but can also be used for much more with a bit of tinkering.

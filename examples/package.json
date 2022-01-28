@@ -1,0 +1,17 @@
+{
+  "name": "blog-entry-typescript-decorators-examples",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "author": "Maurice el-Banna",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
